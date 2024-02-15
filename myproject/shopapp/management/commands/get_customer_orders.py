@@ -1,5 +1,5 @@
 from django.core.management.base import BaseCommand, CommandParser
-from myhw1app.models import Customer, Order
+from shopapp.models import Customer, Order
 
 
 class Command(BaseCommand):
@@ -13,6 +13,7 @@ class Command(BaseCommand):
         customer = Customer.objects.filter(phone=phone).first()
         if customer is not None:
             orders = Order.objects.filter(customer=customer)
-            self.stdout.write(f'{orders}')
+            for order in orders: 
+                self.stdout.write(f'{order}')
         else:
             self.stdout.write(f'{customer}')

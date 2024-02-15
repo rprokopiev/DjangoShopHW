@@ -1,5 +1,5 @@
 from django.core.management.base import BaseCommand
-from myhw1app.models import Product
+from shopapp.models import Product
 
 
 class Command(BaseCommand):
@@ -7,4 +7,5 @@ class Command(BaseCommand):
 
     def handle(self, *args, **kwargs):
         products = Product.objects.all()
-        self.stdout.write(f'{products}')
+        for product in products:
+            self.stdout.write(f'{product}')

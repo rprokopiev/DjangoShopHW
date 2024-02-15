@@ -1,5 +1,5 @@
 from django.core.management.base import BaseCommand
-from myhw1app.models import Customer
+from shopapp.models import Customer
 
 
 class Command(BaseCommand):

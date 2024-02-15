@@ -10,7 +10,7 @@ class Customer(models.Model):
     isactive = models.BooleanField(default=True)
 
     def __str__(self):
-        return f'Customer Name: {self.name}, email: {self.email}, phone: {self.phone}'
+        return f'Customer Name: {self.name}, email: {self.email}'
     
 
 class Product(models.Model):
@@ -32,3 +32,7 @@ class Order(models.Model):
 
     def __str__(self):
         return f'Order date: {self.order_date}, Amount: {self.amount}, Customer: {self.customer}'
+    
+    def total_amount(self):
+        self.amount = sum(product.price for product in self.products.all())
+        self.save()
