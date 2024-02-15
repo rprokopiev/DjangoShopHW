@@ -3,7 +3,7 @@ from shopapp.models import Customer
 
 
 class Command(BaseCommand):
-    help = "Mark customer as inactive per phone number"
+    help = "Mark customer as inactive or active per phone number"
 
     def add_arguments(self, parser):
         parser.add_argument('phone', type=str, help='Phone Number')

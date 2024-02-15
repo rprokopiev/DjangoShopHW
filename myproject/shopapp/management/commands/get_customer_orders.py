@@ -1,4 +1,4 @@
-from django.core.management.base import BaseCommand, CommandParser
+from django.core.management.base import BaseCommand
 from shopapp.models import Customer, Order
 
 
@@ -15,5 +15,7 @@ class Command(BaseCommand):
             orders = Order.objects.filter(customer=customer)
             for order in orders: 
                 self.stdout.write(f'{order}')
+                for product in order.products.all():
+                    self.stdout.write(f'{product}')
         else:
             self.stdout.write(f'{customer}')
