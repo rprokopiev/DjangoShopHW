@@ -5,13 +5,15 @@
 {% endblock%}
 
 {% block content %} 
-    <h2>Orders of {{ customer.name }}</h2>
+    {{ customer.name }}:
     {% for order in orders %}
-        <h3>Order #{{ order.id }} from {{ order.order_date }}</h3><br>
+        <h3>Order #{{ order.id }}</h3>
+        <p>Total Amount: {{ order.amount }}</p>
+        <p>Orde date: {{ order.order_date }}</p>
+        <ul>
+            {% for product in order.products.all %}
+                <li>{{ product.prod_name }} - {{ product.price }}</li>
+            {% endfor %}
+        </ul>
     {% endfor %}
-
-    {% for product in products %}
-        <h3>{{ product }}</h3><br>
-    {% endfor %}
-
 {% endblock%}

@@ -623,3 +623,21 @@ INFO 2024-02-20 17:08:40,122 views 15972 23264 client_order page
 INFO 2024-02-20 17:08:40,142 basehttp 15972 23264 "GET /client_orders/146Cust0 HTTP/1.1" 200 2914
 INFO 2024-02-20 17:17:50,740 autoreload 15972 21176 C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py changed, reloading.
 INFO 2024-02-20 17:17:51,588 autoreload 6732 20372 Watching for file changes with StatReloader
+INFO 2024-02-20 20:30:01,984 autoreload 16140 5600 Watching for file changes with StatReloader
+INFO 2024-02-20 20:30:09,273 views 16140 13316 INDEX page raised
+INFO 2024-02-20 20:30:09,289 basehttp 16140 13316 "GET / HTTP/1.1" 200 356
+WARNING 2024-02-20 20:30:09,454 log 16140 13316 Not Found: /favicon.ico
+WARNING 2024-02-20 20:30:09,454 basehttp 16140 13316 "GET /favicon.ico HTTP/1.1" 404 3017
+INFO 2024-02-20 20:30:30,313 views 16140 13316 ABOUT page raised
+INFO 2024-02-20 20:30:30,313 basehttp 16140 13316 "GET /about/ HTTP/1.1" 200 363
+WARNING 2024-02-20 20:30:51,612 log 16140 13316 Not Found: /client_orders/
+WARNING 2024-02-20 20:30:51,612 basehttp 16140 13316 "GET /client_orders/ HTTP/1.1" 404 3026
+INFO 2024-02-20 20:31:10,800 views 16140 13316 client_order page
+WARNING 2024-02-20 20:31:10,814 log 16140 13316 Not Found: /client_orders/146
+WARNING 2024-02-20 20:31:10,816 basehttp 16140 13316 "GET /client_orders/146 HTTP/1.1" 404 2991
+INFO 2024-02-20 20:31:20,022 views 16140 13316 client_order page
+INFO 2024-02-20 20:31:20,070 basehttp 16140 13316 "GET /client_orders/146Cust0 HTTP/1.1" 200 2208
+INFO 2024-02-20 20:32:01,996 autoreload 16140 5600 C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\myproject\shopapp\models.py changed, reloading.
+INFO 2024-02-20 20:32:02,965 autoreload 16480 1572 Watching for file changes with StatReloader
+INFO 2024-02-20 20:33:00,176 views 16480 14004 client_order page
+INFO 2024-02-20 20:33:00,225 basehttp 16480 14004 "GET /client_orders/146Cust0 HTTP/1.1" 200 2714
