@@ -28,11 +28,22 @@ def about(request):
 def client_orders(request, phone):
     logger.info('client_order page')
     client = get_object_or_404(Customer, phone=phone)
-    orders = Order.objects.filter(customer=client.pk)
+    orders = Order.objects.filter(customer=client.pk).order_by('pk')
+    context = {
+        'customer': client,
+        'orders': orders,
+    }
+    return render(request, 'shopapp/client_orders.html', context)
+
+
+def client_products(request, phone):
+    logger.info('client_products page')
+    client = get_object_or_404(Customer, phone=phone)
+    orders = Order.objects.filter(customer=client.pk).order_by('pk')
     products = [order.products.all() for order in orders]
     context = {
         'customer': client,
         'orders': orders,
         'products': products,
     }
-    return render(request, 'shopapp/client_orders.html', context)
+    return render(request, 'shopapp/client_products.html', context)

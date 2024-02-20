@@ -641,3 +641,26 @@ INFO 2024-02-20 20:32:01,996 autoreload 16140 5600 C:\Users\RND\Documents\RP\19_
 INFO 2024-02-20 20:32:02,965 autoreload 16480 1572 Watching for file changes with StatReloader
 INFO 2024-02-20 20:33:00,176 views 16480 14004 client_order page
 INFO 2024-02-20 20:33:00,225 basehttp 16480 14004 "GET /client_orders/146Cust0 HTTP/1.1" 200 2714
+INFO 2024-02-20 20:36:02,070 autoreload 10916 15080 Watching for file changes with StatReloader
+INFO 2024-02-20 20:36:13,460 views 10916 6468 client_order page
+INFO 2024-02-20 20:36:13,505 basehttp 10916 6468 "GET /client_orders/146Cust0 HTTP/1.1" 200 2714
+INFO 2024-02-20 20:36:15,735 views 10916 6468 client_order page
+INFO 2024-02-20 20:36:15,743 basehttp 10916 6468 "GET /client_orders/146Cust0 HTTP/1.1" 200 2714
+INFO 2024-02-20 20:38:18,652 autoreload 8816 18424 Watching for file changes with StatReloader
+INFO 2024-02-20 20:38:22,453 views 8816 3164 INDEX page raised
+INFO 2024-02-20 20:38:22,475 basehttp 8816 3164 "GET / HTTP/1.1" 200 356
+INFO 2024-02-20 20:38:46,348 views 8816 3164 client_order page
+INFO 2024-02-20 20:38:46,383 basehttp 8816 3164 "GET /client_orders/146Cust0 HTTP/1.1" 200 2714
+INFO 2024-02-20 20:40:26,344 autoreload 8816 18424 C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\myproject\shopapp\views.py changed, reloading.
+INFO 2024-02-20 20:40:27,375 autoreload 16100 5260 Watching for file changes with StatReloader
+INFO 2024-02-20 20:48:33,937 autoreload 10116 16796 Watching for file changes with StatReloader
+INFO 2024-02-20 20:48:51,716 views 10116 13308 client_order page
+INFO 2024-02-20 20:48:51,761 basehttp 10116 13308 "GET /client_orders/146Cust0 HTTP/1.1" 200 2714
+WARNING 2024-02-20 20:49:05,623 log 10116 13308 Not Found: /client_products/146Cust0
+WARNING 2024-02-20 20:49:05,626 basehttp 10116 13308 "GET /client_products/146Cust0 HTTP/1.1" 404 3056
+INFO 2024-02-20 20:49:54,001 autoreload 10116 16796 C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\myproject\shopapp\urls.py changed, reloading.
+INFO 2024-02-20 20:49:54,947 autoreload 5380 12788 Watching for file changes with StatReloader
+INFO 2024-02-20 20:50:04,036 views 5380 2968 client_products page
+INFO 2024-02-20 20:50:04,116 basehttp 5380 2968 "GET /client_products/146Cust0 HTTP/1.1" 200 6096
+INFO 2024-02-20 20:50:44,886 views 5380 2968 client_products page
+INFO 2024-02-20 20:50:44,936 basehttp 5380 2968 "GET /client_products/146Cust0 HTTP/1.1" 200 7614
