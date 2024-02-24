@@ -1,0 +1,666 @@
+INFO 2024-02-20 16:05:08,378 autoreload 21688 12608 Watching for file changes with StatReloader
+WARNING 2024-02-20 16:05:15,970 log 21688 17260 Not Found: /randomapp/
+WARNING 2024-02-20 16:05:15,972 basehttp 21688 17260 "GET /randomapp/ HTTP/1.1" 404 2814
+INFO 2024-02-20 16:05:17,499 views 21688 20532 INDEX page raised
+INFO 2024-02-20 16:05:17,506 basehttp 21688 20532 "GET / HTTP/1.1" 200 0
+WARNING 2024-02-20 16:05:17,706 log 21688 20532 Not Found: /favicon.ico
+WARNING 2024-02-20 16:05:17,708 basehttp 21688 20532 "GET /favicon.ico HTTP/1.1" 404 2817
+INFO 2024-02-20 16:05:43,709 views 21688 10600 INDEX page raised
+INFO 2024-02-20 16:05:43,719 basehttp 21688 10600 "GET / HTTP/1.1" 200 356
+INFO 2024-02-20 16:05:56,836 basehttp 21688 18920 "GET /main HTTP/1.1" 301 0
+INFO 2024-02-20 16:05:56,841 views 21688 12996 MAIN page raised
+INFO 2024-02-20 16:05:56,842 basehttp 21688 12996 "GET /main/ HTTP/1.1" 200 362
+INFO 2024-02-20 16:06:11,791 views 21688 17168 ABOUT page raised
+INFO 2024-02-20 16:06:11,795 basehttp 21688 17168 "GET /about/ HTTP/1.1" 200 363
+INFO 2024-02-20 16:06:42,736 views 21688 12232 ABOUT page raised
+INFO 2024-02-20 16:06:42,744 basehttp 21688 12232 "GET /about/ HTTP/1.1" 200 363
+INFO 2024-02-20 16:27:05,159 autoreload 21688 11200 Watching for file changes with StatReloader
+INFO 2024-02-20 16:27:30,736 autoreload 21688 11200 C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py changed, reloading.
+INFO 2024-02-20 16:27:31,567 autoreload 7852 3780 Watching for file changes with StatReloader
+INFO 2024-02-20 16:30:54,032 autoreload 7852 3780 C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py changed, reloading.
+INFO 2024-02-20 16:30:54,669 autoreload 18480 22232 Watching for file changes with StatReloader
+INFO 2024-02-20 16:32:29,425 autoreload 12708 17724 Watching for file changes with StatReloader
+INFO 2024-02-20 16:44:11,826 autoreload 2400 4340 Watching for file changes with StatReloader
+INFO 2024-02-20 16:44:29,960 autoreload 2400 4340 C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py changed, reloading.
+INFO 2024-02-20 16:44:30,609 autoreload 4256 16352 Watching for file changes with StatReloader
+INFO 2024-02-20 16:44:56,856 views 4256 16304 ABOUT page raised
+INFO 2024-02-20 16:44:56,863 basehttp 4256 16304 "GET /about/ HTTP/1.1" 200 363
+INFO 2024-02-20 16:46:00,658 views 4256 14604 client_order page
+ERROR 2024-02-20 16:46:00,832 log 4256 14604 Internal Server Error: /client_orders/146Cust0
+Traceback (most recent call last):
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py", line 38, in client_orders
+    return render(request, 'shopapp/client_orders.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\defaulttags.py", line 860, in do_for
+    sequence = parser.compile_filter(bits[in_index + 1])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '()' from 'order.products.all()'
+ERROR 2024-02-20 16:46:00,853 basehttp 4256 14604 "GET /client_orders/146Cust0 HTTP/1.1" 500 209144
+INFO 2024-02-20 16:46:22,754 views 4256 14808 client_order page
+ERROR 2024-02-20 16:46:22,864 log 4256 14808 Internal Server Error: /client_orders/146Cust0
+Traceback (most recent call last):
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py", line 38, in client_orders
+    return render(request, 'shopapp/client_orders.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\defaulttags.py", line 860, in do_for
+    sequence = parser.compile_filter(bits[in_index + 1])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '()' from 'order.products.all()'
+ERROR 2024-02-20 16:46:22,886 basehttp 4256 14808 "GET /client_orders/146Cust0 HTTP/1.1" 500 209474
+INFO 2024-02-20 16:47:49,701 autoreload 4256 16352 C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py changed, reloading.
+INFO 2024-02-20 16:47:50,394 autoreload 12408 13252 Watching for file changes with StatReloader
+INFO 2024-02-20 16:47:53,555 views 12408 13912 client_order page
+ERROR 2024-02-20 16:47:53,649 log 12408 13912 Internal Server Error: /client_orders/146Cust0
+Traceback (most recent call last):
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py", line 37, in client_orders
+    return render(request, 'shopapp/client_orders.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\defaulttags.py", line 860, in do_for
+    sequence = parser.compile_filter(bits[in_index + 1])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '()' from 'order.products.all()'
+ERROR 2024-02-20 16:47:53,665 basehttp 12408 13912 "GET /client_orders/146Cust0 HTTP/1.1" 500 200887
+INFO 2024-02-20 16:48:03,008 views 12408 13880 client_order page
+ERROR 2024-02-20 16:48:03,071 log 12408 13880 Internal Server Error: /client_orders/146Cust0
+Traceback (most recent call last):
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py", line 37, in client_orders
+    return render(request, 'shopapp/client_orders.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\defaulttags.py", line 860, in do_for
+    sequence = parser.compile_filter(bits[in_index + 1])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '()' from 'order.products.all()'
+ERROR 2024-02-20 16:48:03,085 basehttp 12408 13880 "GET /client_orders/146Cust0 HTTP/1.1" 500 200887
+INFO 2024-02-20 16:48:09,300 autoreload 12408 13252 C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\urls.py changed, reloading.
+INFO 2024-02-20 16:48:10,187 autoreload 22336 18404 Watching for file changes with StatReloader
+INFO 2024-02-20 16:48:11,699 autoreload 22336 18404 C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py changed, reloading.
+INFO 2024-02-20 16:48:12,427 autoreload 13012 7080 Watching for file changes with StatReloader
+INFO 2024-02-20 16:48:16,378 views 13012 11912 client_order page
+ERROR 2024-02-20 16:48:16,480 log 13012 11912 Internal Server Error: /client_orders/146Cust0
+Traceback (most recent call last):
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py", line 37, in client_orders
+    return render(request, 'shopapp/client_orders.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\defaulttags.py", line 860, in do_for
+    sequence = parser.compile_filter(bits[in_index + 1])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '()' from 'order.products.all()'
+ERROR 2024-02-20 16:48:16,496 basehttp 13012 11912 "GET /client_orders/146Cust0 HTTP/1.1" 500 200887
+INFO 2024-02-20 16:48:28,858 autoreload 2264 13680 Watching for file changes with StatReloader
+INFO 2024-02-20 16:48:33,019 views 2264 22088 INDEX page raised
+INFO 2024-02-20 16:48:33,028 basehttp 2264 22088 "GET / HTTP/1.1" 200 356
+INFO 2024-02-20 16:49:12,194 views 2264 14304 client_order page
+ERROR 2024-02-20 16:49:12,279 log 2264 14304 Internal Server Error: /client_orders/146Cust0
+Traceback (most recent call last):
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py", line 37, in client_orders
+    return render(request, 'shopapp/client_orders.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\defaulttags.py", line 860, in do_for
+    sequence = parser.compile_filter(bits[in_index + 1])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '()' from 'order.products.all()'
+ERROR 2024-02-20 16:49:12,295 basehttp 2264 14304 "GET /client_orders/146Cust0 HTTP/1.1" 500 200750
+INFO 2024-02-20 16:49:55,001 autoreload 4864 2820 Watching for file changes with StatReloader
+INFO 2024-02-20 16:49:59,886 views 4864 22868 INDEX page raised
+INFO 2024-02-20 16:49:59,894 basehttp 4864 22868 "GET / HTTP/1.1" 200 356
+INFO 2024-02-20 16:50:04,634 views 4864 22868 client_order page
+INFO 2024-02-20 16:50:04,659 basehttp 4864 22868 "GET /client_orders/146Cust0 HTTP/1.1" 200 708
+INFO 2024-02-20 16:53:18,876 autoreload 4864 2820 C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py changed, reloading.
+INFO 2024-02-20 16:53:19,726 autoreload 11924 10528 Watching for file changes with StatReloader
+INFO 2024-02-20 16:53:25,920 views 11924 12956 client_order page
+INFO 2024-02-20 16:53:25,980 basehttp 11924 12956 "GET /client_orders/146Cust0 HTTP/1.1" 200 909
+INFO 2024-02-20 17:06:03,435 views 11924 15748 client_order page
+INFO 2024-02-20 17:06:03,450 basehttp 11924 15748 "GET /client_orders/146Cust0 HTTP/1.1" 200 918
+INFO 2024-02-20 17:06:21,444 views 11924 5408 client_order page
+INFO 2024-02-20 17:06:21,461 basehttp 11924 5408 "GET /client_orders/146Cust0 HTTP/1.1" 200 2923
+INFO 2024-02-20 17:07:19,875 autoreload 11924 10528 C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py changed, reloading.
+INFO 2024-02-20 17:07:20,734 autoreload 15972 21176 Watching for file changes with StatReloader
+INFO 2024-02-20 17:07:28,005 views 15972 21148 client_order page
+INFO 2024-02-20 17:07:28,066 basehttp 15972 21148 "GET /client_orders/146Cust0 HTTP/1.1" 200 2923
+INFO 2024-02-20 17:07:34,164 views 15972 21148 client_order page
+INFO 2024-02-20 17:07:34,176 basehttp 15972 21148 "GET /client_orders/146Cust0 HTTP/1.1" 200 2914
+INFO 2024-02-20 17:08:17,385 views 15972 23356 client_order page
+INFO 2024-02-20 17:08:17,408 basehttp 15972 23356 "GET /client_orders/146Cust0 HTTP/1.1" 200 874
+INFO 2024-02-20 17:08:31,227 views 15972 17680 client_order page
+ERROR 2024-02-20 17:08:31,311 log 15972 17680 Internal Server Error: /client_orders/146Cust0
+Traceback (most recent call last):
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py", line 38, in client_orders
+    return render(request, 'shopapp/client_orders.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' Name' from 'product.Product Name'
+ERROR 2024-02-20 17:08:31,329 basehttp 15972 17680 "GET /client_orders/146Cust0 HTTP/1.1" 500 201421
+INFO 2024-02-20 17:08:40,122 views 15972 23264 client_order page
+INFO 2024-02-20 17:08:40,142 basehttp 15972 23264 "GET /client_orders/146Cust0 HTTP/1.1" 200 2914
+INFO 2024-02-20 17:17:50,740 autoreload 15972 21176 C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py changed, reloading.
+INFO 2024-02-20 17:17:51,588 autoreload 6732 20372 Watching for file changes with StatReloader
+INFO 2024-02-20 20:30:01,984 autoreload 16140 5600 Watching for file changes with StatReloader
+INFO 2024-02-20 20:30:09,273 views 16140 13316 INDEX page raised
+INFO 2024-02-20 20:30:09,289 basehttp 16140 13316 "GET / HTTP/1.1" 200 356
+WARNING 2024-02-20 20:30:09,454 log 16140 13316 Not Found: /favicon.ico
+WARNING 2024-02-20 20:30:09,454 basehttp 16140 13316 "GET /favicon.ico HTTP/1.1" 404 3017
+INFO 2024-02-20 20:30:30,313 views 16140 13316 ABOUT page raised
+INFO 2024-02-20 20:30:30,313 basehttp 16140 13316 "GET /about/ HTTP/1.1" 200 363
+WARNING 2024-02-20 20:30:51,612 log 16140 13316 Not Found: /client_orders/
+WARNING 2024-02-20 20:30:51,612 basehttp 16140 13316 "GET /client_orders/ HTTP/1.1" 404 3026
+INFO 2024-02-20 20:31:10,800 views 16140 13316 client_order page
+WARNING 2024-02-20 20:31:10,814 log 16140 13316 Not Found: /client_orders/146
+WARNING 2024-02-20 20:31:10,816 basehttp 16140 13316 "GET /client_orders/146 HTTP/1.1" 404 2991
+INFO 2024-02-20 20:31:20,022 views 16140 13316 client_order page
+INFO 2024-02-20 20:31:20,070 basehttp 16140 13316 "GET /client_orders/146Cust0 HTTP/1.1" 200 2208
+INFO 2024-02-20 20:32:01,996 autoreload 16140 5600 C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\myproject\shopapp\models.py changed, reloading.
+INFO 2024-02-20 20:32:02,965 autoreload 16480 1572 Watching for file changes with StatReloader
+INFO 2024-02-20 20:33:00,176 views 16480 14004 client_order page
+INFO 2024-02-20 20:33:00,225 basehttp 16480 14004 "GET /client_orders/146Cust0 HTTP/1.1" 200 2714
+INFO 2024-02-20 20:36:02,070 autoreload 10916 15080 Watching for file changes with StatReloader
+INFO 2024-02-20 20:36:13,460 views 10916 6468 client_order page
+INFO 2024-02-20 20:36:13,505 basehttp 10916 6468 "GET /client_orders/146Cust0 HTTP/1.1" 200 2714
+INFO 2024-02-20 20:36:15,735 views 10916 6468 client_order page
+INFO 2024-02-20 20:36:15,743 basehttp 10916 6468 "GET /client_orders/146Cust0 HTTP/1.1" 200 2714
+INFO 2024-02-20 20:38:18,652 autoreload 8816 18424 Watching for file changes with StatReloader
+INFO 2024-02-20 20:38:22,453 views 8816 3164 INDEX page raised
+INFO 2024-02-20 20:38:22,475 basehttp 8816 3164 "GET / HTTP/1.1" 200 356
+INFO 2024-02-20 20:38:46,348 views 8816 3164 client_order page
+INFO 2024-02-20 20:38:46,383 basehttp 8816 3164 "GET /client_orders/146Cust0 HTTP/1.1" 200 2714
+INFO 2024-02-20 20:40:26,344 autoreload 8816 18424 C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\myproject\shopapp\views.py changed, reloading.
+INFO 2024-02-20 20:40:27,375 autoreload 16100 5260 Watching for file changes with StatReloader
+INFO 2024-02-20 20:48:33,937 autoreload 10116 16796 Watching for file changes with StatReloader
+INFO 2024-02-20 20:48:51,716 views 10116 13308 client_order page
+INFO 2024-02-20 20:48:51,761 basehttp 10116 13308 "GET /client_orders/146Cust0 HTTP/1.1" 200 2714
+WARNING 2024-02-20 20:49:05,623 log 10116 13308 Not Found: /client_products/146Cust0
+WARNING 2024-02-20 20:49:05,626 basehttp 10116 13308 "GET /client_products/146Cust0 HTTP/1.1" 404 3056
+INFO 2024-02-20 20:49:54,001 autoreload 10116 16796 C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\myproject\shopapp\urls.py changed, reloading.
+INFO 2024-02-20 20:49:54,947 autoreload 5380 12788 Watching for file changes with StatReloader
+INFO 2024-02-20 20:50:04,036 views 5380 2968 client_products page
+INFO 2024-02-20 20:50:04,116 basehttp 5380 2968 "GET /client_products/146Cust0 HTTP/1.1" 200 6096
+INFO 2024-02-20 20:50:44,886 views 5380 2968 client_products page
+INFO 2024-02-20 20:50:44,936 basehttp 5380 2968 "GET /client_products/146Cust0 HTTP/1.1" 200 7614
