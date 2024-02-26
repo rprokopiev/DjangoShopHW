@@ -76,3 +76,25 @@ def add_product(request):
         form = AddProduct()
         message = 'Fill the form'
     return render(request, 'shopapp/add_product.html', {'form': form, 'message': message})
+
+
+# def edit_product(request):
+#     if request.method == 'POST':
+#         form = AddProduct(request.POST)
+#         if form.is_valid():
+#             prod_name = form.cleaned_data['prod_name']
+#             description = form.cleaned_data['description']
+#             price = form.cleaned_data['price']
+#             quantity = form.cleaned_data['quantity']
+#             new_product = Product(
+#                                 prod_name=prod_name,
+#                                 description=description,
+#                                 price=price,
+#                                 quantity=quantity
+#                             )
+#             new_product.save()
+#             message = f'Product {new_product.prod_name} added'
+#     else:
+#         form = AddProduct()
+#         message = 'Fill the form'
+#     return render(request, 'shopapp/add_product.html', {'form': form, 'message': message})

@@ -6,7 +6,7 @@
 
 {% block content %} 
 
-<button type="submit" href="add_product/">Добавить</button>
+<a href="{% url 'add_product' %}">Добавить</a>
 
 <table>
     <tr>
@@ -24,18 +24,11 @@
         <td>{{ poduct.description }}</td>
         <td>{{ poduct.price }}</td>
         <td>{{ poduct.quantity }}</td>
-        <td>
-            <form method="post">
-                {% csrf_token %}
-                {{ change_form }}
-                <button type="submit">Изменить</button>
-            </form>
-        </td>
     </tr>
     {% endfor %}
 </table>
 
-<a href="add_product/">Добавить</a>
+<a href="{% url 'add_product' %}">Добавить</a>
 
 
 {% endblock%}

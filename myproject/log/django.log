@@ -851,3 +851,344 @@ ERROR 2024-02-26 16:20:16,620 basehttp 8188 2988 "GET /add_product/ HTTP/1.1" 50
 INFO 2024-02-26 16:20:54,091 autoreload 8188 17220 C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py changed, reloading.
 INFO 2024-02-26 16:20:54,943 autoreload 20384 21508 Watching for file changes with StatReloader
 INFO 2024-02-26 16:20:59,314 basehttp 20384 22048 "GET /add_product/ HTTP/1.1" 200 1240
+INFO 2024-02-26 16:22:31,657 autoreload 17248 13768 Watching for file changes with StatReloader
+INFO 2024-02-26 16:22:32,701 views 17248 15156 inventory page
+INFO 2024-02-26 16:22:32,724 basehttp 17248 15156 "GET /inventory/ HTTP/1.1" 200 5383
+WARNING 2024-02-26 16:22:36,620 log 17248 15156 Not Found: /inventory/add_product/
+WARNING 2024-02-26 16:22:36,622 basehttp 17248 15156 "GET /inventory/add_product/ HTTP/1.1" 404 3608
+INFO 2024-02-26 16:22:47,025 basehttp 17248 15156 "GET /add_product/ HTTP/1.1" 200 1240
+INFO 2024-02-26 16:22:53,371 views 17248 15156 inventory page
+INFO 2024-02-26 16:22:53,377 basehttp 17248 15156 "GET /inventory/ HTTP/1.1" 200 5383
+INFO 2024-02-26 16:23:34,230 views 17248 7152 inventory page
+INFO 2024-02-26 16:23:34,253 basehttp 17248 7152 "GET /inventory/ HTTP/1.1" 200 5391
+WARNING 2024-02-26 16:23:36,456 log 17248 7152 Not Found: /inventory/add_product.html
+WARNING 2024-02-26 16:23:36,458 basehttp 17248 7152 "GET /inventory/add_product.html HTTP/1.1" 404 3620
+INFO 2024-02-26 16:23:43,411 views 17248 20300 inventory page
+INFO 2024-02-26 16:23:43,417 basehttp 17248 20300 "GET /inventory/ HTTP/1.1" 200 5391
+INFO 2024-02-26 16:23:58,228 views 17248 20300 inventory page
+INFO 2024-02-26 16:23:58,234 basehttp 17248 20300 "GET /inventory/ HTTP/1.1" 200 5391
+WARNING 2024-02-26 16:23:59,497 log 17248 20300 Not Found: /inventory/add_product.html
+WARNING 2024-02-26 16:23:59,498 basehttp 17248 20300 "GET /inventory/add_product.html HTTP/1.1" 404 3620
+INFO 2024-02-26 16:24:18,581 views 17248 12084 inventory page
+INFO 2024-02-26 16:24:18,591 basehttp 17248 12084 "GET /inventory/ HTTP/1.1" 200 5397
+WARNING 2024-02-26 16:24:21,730 log 17248 12084 Not Found: /inventory/index/add_product.html
+WARNING 2024-02-26 16:24:21,732 basehttp 17248 12084 "GET /inventory/index/add_product.html HTTP/1.1" 404 3638
+WARNING 2024-02-26 16:25:35,306 log 17248 14560 Not Found: /inventory/index/add_product.html
+WARNING 2024-02-26 16:25:35,308 basehttp 17248 14560 "GET /inventory/index/add_product.html HTTP/1.1" 404 3638
+INFO 2024-02-26 16:25:39,963 views 17248 14560 inventory page
+INFO 2024-02-26 16:25:39,969 basehttp 17248 14560 "GET /inventory/ HTTP/1.1" 200 5398
+INFO 2024-02-26 16:26:14,052 views 17248 21220 INDEX page raised
+INFO 2024-02-26 16:26:14,057 basehttp 17248 21220 "GET / HTTP/1.1" 200 356
+INFO 2024-02-26 16:26:18,375 views 17248 21220 inventory page
+INFO 2024-02-26 16:26:18,383 basehttp 17248 21220 "GET /inventory/ HTTP/1.1" 200 5413
+WARNING 2024-02-26 16:26:20,154 log 17248 2480 Not Found: /add_product.html
+WARNING 2024-02-26 16:26:20,155 basehttp 17248 2480 "GET /add_product.html HTTP/1.1" 404 3590
+INFO 2024-02-26 16:26:38,074 basehttp 17248 13500 "GET /add_product/ HTTP/1.1" 200 1240
+INFO 2024-02-26 16:26:50,298 views 17248 21572 inventory page
+INFO 2024-02-26 16:26:50,305 basehttp 17248 21572 "GET /inventory/ HTTP/1.1" 200 5409
+INFO 2024-02-26 16:26:52,291 basehttp 17248 21572 "GET /add_product/ HTTP/1.1" 200 1240
+INFO 2024-02-26 16:27:08,268 views 17248 13680 inventory page
+INFO 2024-02-26 16:27:08,277 basehttp 17248 13680 "GET /inventory/ HTTP/1.1" 200 5387
+WARNING 2024-02-26 16:27:11,858 log 17248 14432 Not Found: /inventory/add_product/
+WARNING 2024-02-26 16:27:11,860 basehttp 17248 14432 "GET /inventory/add_product/ HTTP/1.1" 404 3608
+INFO 2024-02-26 16:27:24,430 views 17248 15808 inventory page
+INFO 2024-02-26 16:27:24,438 basehttp 17248 15808 "GET /inventory/ HTTP/1.1" 200 5388
+INFO 2024-02-26 16:27:26,494 basehttp 17248 15808 "GET /add_product/ HTTP/1.1" 200 1240
+INFO 2024-02-26 16:27:49,459 views 17248 18116 inventory page
+INFO 2024-02-26 16:27:49,465 basehttp 17248 18116 "GET /inventory/ HTTP/1.1" 200 5388
+INFO 2024-02-26 16:27:52,215 basehttp 17248 18180 "GET /add_product/ HTTP/1.1" 200 1240
+INFO 2024-02-26 16:29:07,866 views 17248 19052 inventory page
+INFO 2024-02-26 16:29:07,871 basehttp 17248 19052 "GET /inventory/ HTTP/1.1" 200 3211
+INFO 2024-02-26 16:29:10,329 basehttp 17248 19052 "GET /add_product/ HTTP/1.1" 200 1240
+INFO 2024-02-26 16:43:24,647 autoreload 21628 4136 Watching for file changes with StatReloader
+INFO 2024-02-26 16:43:41,205 views 21628 15520 INDEX page raised
+INFO 2024-02-26 16:43:41,212 basehttp 21628 15520 "GET / HTTP/1.1" 200 356
+INFO 2024-02-26 16:43:44,220 views 21628 15520 inventory page
+INFO 2024-02-26 16:43:44,244 basehttp 21628 15520 "GET /inventory/ HTTP/1.1" 200 3211
+INFO 2024-02-26 16:43:47,861 basehttp 21628 15520 "GET /add_product/ HTTP/1.1" 200 1240
+INFO 2024-02-26 16:50:38,516 autoreload 20620 3812 Watching for file changes with StatReloader
+INFO 2024-02-26 16:50:50,311 views 20620 17972 inventory page
+ERROR 2024-02-26 16:50:50,448 log 20620 17972 Internal Server Error: /inventory/
+Traceback (most recent call last):
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py", line 56, in inventory
+    return render(request, 'shopapp/inventory.html', context={'inventory': inventory})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'edit_product' not found. 'edit_product' is not a valid view function or pattern name.
+ERROR 2024-02-26 16:50:50,482 basehttp 20620 17972 "GET /inventory/ HTTP/1.1" 500 178446
+INFO 2024-02-26 16:50:50,856 views 20620 17972 inventory page
+ERROR 2024-02-26 16:50:50,905 log 20620 17972 Internal Server Error: /inventory/
+Traceback (most recent call last):
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py", line 56, in inventory
+    return render(request, 'shopapp/inventory.html', context={'inventory': inventory})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'edit_product' not found. 'edit_product' is not a valid view function or pattern name.
+ERROR 2024-02-26 16:50:50,917 basehttp 20620 17972 "GET /inventory/ HTTP/1.1" 500 178172
+INFO 2024-02-26 16:54:00,761 views 20620 22384 inventory page
+ERROR 2024-02-26 16:54:00,801 log 20620 22384 Internal Server Error: /inventory/
+Traceback (most recent call last):
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py", line 56, in inventory
+    return render(request, 'shopapp/inventory.html', context={'inventory': inventory})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'edit_product' not found. 'edit_product' is not a valid view function or pattern name.
+ERROR 2024-02-26 16:54:00,818 basehttp 20620 22384 "GET /inventory/ HTTP/1.1" 500 178269
+INFO 2024-02-26 16:54:29,671 autoreload 22104 20628 Watching for file changes with StatReloader
+INFO 2024-02-26 16:54:33,172 views 22104 21868 inventory page
+ERROR 2024-02-26 16:54:33,270 log 22104 21868 Internal Server Error: /inventory/
+Traceback (most recent call last):
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py", line 56, in inventory
+    return render(request, 'shopapp/inventory.html', context={'inventory': inventory})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'edit_product' not found. 'edit_product' is not a valid view function or pattern name.
+ERROR 2024-02-26 16:54:33,287 basehttp 22104 21868 "GET /inventory/ HTTP/1.1" 500 178269
+INFO 2024-02-26 16:55:17,308 autoreload 16668 19004 Watching for file changes with StatReloader
+INFO 2024-02-26 16:55:19,564 views 16668 18628 inventory page
+INFO 2024-02-26 16:55:19,618 basehttp 16668 18628 "GET /inventory/ HTTP/1.1" 200 2403
+INFO 2024-02-26 16:55:21,770 basehttp 16668 18628 "GET /about/inventory/add_product/ HTTP/1.1" 200 1240
