@@ -1,0 +1,48 @@
+{% extends 'shopapp/base.html' %}
+
+{% block title %} 
+    ShopAppAbout
+{% endblock%}
+
+{% block content %} 
+<form method="post">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit" href="">Добавить</button>
+</form>
+
+<table>
+    <tr>
+        <th>Product Picture</th>
+        <th>Product Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th></th>
+    </tr>
+    {% for poduct in inventory %}
+    <tr>
+        <td>{{ poduct.image }}</td>
+        <td>{{ poduct.prod_name }}</td>
+        <td>{{ poduct.description }}</td>
+        <td>{{ poduct.price }}</td>
+        <td>{{ poduct.quantity }}</td>
+        <td>
+            <form method="post">
+                {% csrf_token %}
+                {{ form}}
+                <button type="submit">Изменить</button>
+                <button type="submit">Удалить</button>
+            </form>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit">Добавить</button>
+</form>
+    
+{% endblock%}

@@ -664,3 +664,151 @@ INFO 2024-02-20 20:50:04,036 views 5380 2968 client_products page
 INFO 2024-02-20 20:50:04,116 basehttp 5380 2968 "GET /client_products/146Cust0 HTTP/1.1" 200 6096
 INFO 2024-02-20 20:50:44,886 views 5380 2968 client_products page
 INFO 2024-02-20 20:50:44,936 basehttp 5380 2968 "GET /client_products/146Cust0 HTTP/1.1" 200 7614
+INFO 2024-02-24 15:15:44,013 autoreload 2312 14648 Watching for file changes with StatReloader
+INFO 2024-02-24 15:15:59,588 views 2312 14720 INDEX page raised
+INFO 2024-02-24 15:15:59,611 basehttp 2312 14720 "GET / HTTP/1.1" 200 467
+INFO 2024-02-24 15:16:23,626 views 2312 14720 INDEX page raised
+INFO 2024-02-24 15:16:23,641 basehttp 2312 14720 "GET / HTTP/1.1" 200 459
+INFO 2024-02-24 15:16:26,067 views 2312 14720 inventory page
+INFO 2024-02-24 15:16:26,096 basehttp 2312 14720 "GET /inventory/ HTTP/1.1" 200 1291
+INFO 2024-02-24 15:23:00,334 views 2312 11736 inventory page
+INFO 2024-02-24 15:23:00,344 basehttp 2312 11736 "GET /inventory/ HTTP/1.1" 200 2283
+INFO 2024-02-24 15:29:37,549 views 2312 13984 inventory page
+INFO 2024-02-24 15:29:37,566 basehttp 2312 13984 "GET /inventory/ HTTP/1.1" 200 6023
+INFO 2024-02-24 15:30:05,301 views 2312 13984 inventory page
+INFO 2024-02-24 15:30:05,318 basehttp 2312 13984 "GET /inventory/ HTTP/1.1" 200 5680
+INFO 2024-02-24 15:30:35,910 views 2312 13984 inventory page
+INFO 2024-02-24 15:30:35,925 basehttp 2312 13984 "GET /inventory/ HTTP/1.1" 200 5680
+INFO 2024-02-24 15:32:39,719 views 2312 13984 inventory page
+INFO 2024-02-24 15:32:39,737 basehttp 2312 13984 "GET /inventory/ HTTP/1.1" 200 8661
+INFO 2024-02-24 15:33:40,856 views 2312 13984 inventory page
+INFO 2024-02-24 15:33:40,869 basehttp 2312 13984 "GET /inventory/ HTTP/1.1" 200 6074
+INFO 2024-02-24 15:34:40,401 views 2312 13984 inventory page
+INFO 2024-02-24 15:34:40,419 basehttp 2312 13984 "GET /inventory/ HTTP/1.1" 200 6143
+INFO 2024-02-24 15:34:41,775 views 2312 13984 inventory page
+INFO 2024-02-24 15:34:41,780 basehttp 2312 13984 "GET /inventory/ HTTP/1.1" 200 6143
+INFO 2024-02-24 15:35:21,336 views 2312 13984 inventory page
+INFO 2024-02-24 15:35:21,350 basehttp 2312 13984 "GET /inventory/ HTTP/1.1" 200 6231
+INFO 2024-02-24 15:35:22,107 views 2312 13984 inventory page
+INFO 2024-02-24 15:35:22,123 basehttp 2312 13984 "GET /inventory/ HTTP/1.1" 200 6231
+INFO 2024-02-24 15:35:32,966 views 2312 13984 inventory page
+INFO 2024-02-24 15:35:32,987 basehttp 2312 13984 "GET /inventory/ HTTP/1.1" 200 6240
+INFO 2024-02-24 15:37:18,907 views 2312 13984 inventory page
+INFO 2024-02-24 15:37:18,917 basehttp 2312 13984 "GET /inventory/ HTTP/1.1" 200 6138
+INFO 2024-02-24 15:38:02,896 views 2312 13984 inventory page
+INFO 2024-02-24 15:38:02,902 basehttp 2312 13984 "GET /inventory/ HTTP/1.1" 200 6105
+INFO 2024-02-24 15:38:03,673 views 2312 13984 inventory page
+INFO 2024-02-24 15:38:03,685 basehttp 2312 13984 "GET /inventory/ HTTP/1.1" 200 6105
+INFO 2024-02-24 15:55:13,586 autoreload 2312 14648 C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\myproject\shopapp\models.py changed, reloading.
+INFO 2024-02-24 15:55:14,668 autoreload 18672 16132 Watching for file changes with StatReloader
+INFO 2024-02-24 15:57:56,016 autoreload 13492 11200 Watching for file changes with StatReloader
+INFO 2024-02-24 15:58:01,563 views 13492 9652 inventory page
+ERROR 2024-02-24 15:58:01,779 log 13492 9652 Internal Server Error: /inventory/
+Traceback (most recent call last):
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: shopapp_product.image
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\myproject\shopapp\views.py", line 55, in inventory
+    return render(request, 'shopapp/inventory.html', context={'inventory': inventory})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\template\defaulttags.py", line 198, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: shopapp_product.image
+ERROR 2024-02-24 15:58:01,811 basehttp 13492 9652 "GET /inventory/ HTTP/1.1" 500 214047
+INFO 2024-02-24 16:06:16,223 autoreload 8136 11668 Watching for file changes with StatReloader
+INFO 2024-02-24 16:47:03,282 autoreload 1040 3080 Watching for file changes with StatReloader
