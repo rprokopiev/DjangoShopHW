@@ -10,5 +10,6 @@ urlpatterns = [
     path('client_products/<str:phone>', views.client_products, name='client_products'),
     path('inventory/', views.inventory, name='inventory'),
     path('inventory/add_product/', views.add_product, name='add_product'),   
-    # path('inventory/edit_product/<int:product_id>', views.edit_product, name='edit_product'),  
+    path('inventory/edit_product/<int:product_id>/', views.edit_product, name='edit_product'),  
+    path('upload/', views.upload_image, name='upload_image'), 
 ]

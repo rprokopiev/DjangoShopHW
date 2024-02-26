@@ -6,7 +6,7 @@
 
 {% block content %} 
 
-<a href="{% url 'add_product' %}">Добавить</a>
+<a href="{% url 'add_product' %}">Add</a>
 
 <table>
     <tr>
@@ -24,11 +24,12 @@
         <td>{{ poduct.description }}</td>
         <td>{{ poduct.price }}</td>
         <td>{{ poduct.quantity }}</td>
+        <td><a href="{% url 'edit_product' poduct.id %}">Edit</a></td>
     </tr>
     {% endfor %}
 </table>
 
-<a href="{% url 'add_product' %}">Добавить</a>
+<a href="{% url 'add_product' %}">Add</a>
 
 
 {% endblock%}
