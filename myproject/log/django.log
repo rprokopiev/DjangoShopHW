@@ -664,3 +664,190 @@ INFO 2024-02-20 20:50:04,036 views 5380 2968 client_products page
 INFO 2024-02-20 20:50:04,116 basehttp 5380 2968 "GET /client_products/146Cust0 HTTP/1.1" 200 6096
 INFO 2024-02-20 20:50:44,886 views 5380 2968 client_products page
 INFO 2024-02-20 20:50:44,936 basehttp 5380 2968 "GET /client_products/146Cust0 HTTP/1.1" 200 7614
+INFO 2024-02-26 15:47:57,990 autoreload 16900 9472 Watching for file changes with StatReloader
+INFO 2024-02-26 15:48:06,494 views 16900 16952 INDEX page raised
+INFO 2024-02-26 15:48:06,504 basehttp 16900 16952 "GET / HTTP/1.1" 200 356
+WARNING 2024-02-26 15:48:06,738 log 16900 16952 Not Found: /favicon.ico
+WARNING 2024-02-26 15:48:06,738 basehttp 16900 16952 "GET /favicon.ico HTTP/1.1" 404 3396
+INFO 2024-02-26 15:48:17,494 basehttp 16900 16352 "GET /inventory HTTP/1.1" 301 0
+INFO 2024-02-26 15:48:17,498 views 16900 19508 inventory page
+INFO 2024-02-26 15:48:17,517 basehttp 16900 19508 "GET /inventory/ HTTP/1.1" 200 5705
+INFO 2024-02-26 15:50:32,724 autoreload 14024 15976 Watching for file changes with StatReloader
+INFO 2024-02-26 15:50:35,999 views 14024 18152 inventory page
+INFO 2024-02-26 15:50:36,061 basehttp 14024 18152 "POST /inventory/ HTTP/1.1" 200 5705
+INFO 2024-02-26 15:50:37,123 views 14024 18152 inventory page
+INFO 2024-02-26 15:50:37,128 basehttp 14024 18152 "POST /inventory/ HTTP/1.1" 200 5705
+INFO 2024-02-26 15:50:38,471 views 14024 18152 inventory page
+INFO 2024-02-26 15:50:38,478 basehttp 14024 18152 "POST /inventory/ HTTP/1.1" 200 5705
+INFO 2024-02-26 15:50:39,314 views 14024 18152 inventory page
+INFO 2024-02-26 15:50:39,324 basehttp 14024 18152 "POST /inventory/ HTTP/1.1" 200 5705
+INFO 2024-02-26 15:56:06,825 autoreload 15612 7340 Watching for file changes with StatReloader
+INFO 2024-02-26 15:56:11,650 views 15612 11388 inventory page
+INFO 2024-02-26 15:56:11,695 basehttp 15612 11388 "POST /inventory/ HTTP/1.1" 200 5584
+WARNING 2024-02-26 15:56:14,422 log 15612 18424 Forbidden (CSRF token missing.): /inventory/
+WARNING 2024-02-26 15:56:14,423 basehttp 15612 18424 "POST /inventory/ HTTP/1.1" 403 2505
+WARNING 2024-02-26 15:56:59,110 log 15612 21952 Forbidden (CSRF token missing.): /inventory/
+WARNING 2024-02-26 15:56:59,111 basehttp 15612 21952 "POST /inventory/ HTTP/1.1" 403 2505
+INFO 2024-02-26 15:57:02,016 views 15612 22024 inventory page
+INFO 2024-02-26 15:57:02,031 basehttp 15612 22024 "GET /inventory/ HTTP/1.1" 200 5715
+INFO 2024-02-26 15:57:04,798 views 15612 22024 inventory page
+INFO 2024-02-26 15:57:04,804 basehttp 15612 22024 "POST /inventory/ HTTP/1.1" 200 5715
+INFO 2024-02-26 15:57:08,378 views 15612 22024 inventory page
+INFO 2024-02-26 15:57:08,384 basehttp 15612 22024 "POST /inventory/ HTTP/1.1" 200 5715
+INFO 2024-02-26 15:57:30,303 views 15612 21564 inventory page
+INFO 2024-02-26 15:57:30,323 basehttp 15612 21564 "POST /inventory/ HTTP/1.1" 200 5716
+INFO 2024-02-26 15:57:31,279 views 15612 21564 inventory page
+INFO 2024-02-26 15:57:31,286 basehttp 15612 21564 "POST /inventory/ HTTP/1.1" 200 5716
+INFO 2024-02-26 15:57:55,284 views 15612 21940 inventory page
+INFO 2024-02-26 15:57:55,297 basehttp 15612 21940 "GET /inventory/ HTTP/1.1" 200 5715
+INFO 2024-02-26 15:57:57,206 views 15612 21940 inventory page
+INFO 2024-02-26 15:57:57,211 basehttp 15612 21940 "POST /inventory/ HTTP/1.1" 200 5715
+INFO 2024-02-26 15:57:58,784 views 15612 21940 inventory page
+INFO 2024-02-26 15:57:58,790 basehttp 15612 21940 "POST /inventory/ HTTP/1.1" 200 5715
+INFO 2024-02-26 15:58:24,958 views 15612 17212 inventory page
+INFO 2024-02-26 15:58:24,968 basehttp 15612 17212 "POST /inventory/ HTTP/1.1" 200 5715
+INFO 2024-02-26 15:59:03,871 views 15612 22224 inventory page
+INFO 2024-02-26 15:59:03,890 basehttp 15612 22224 "GET /inventory/ HTTP/1.1" 200 5453
+WARNING 2024-02-26 15:59:05,805 log 15612 22224 Forbidden (CSRF token missing.): /inventory/
+WARNING 2024-02-26 15:59:05,808 basehttp 15612 22224 "POST /inventory/ HTTP/1.1" 403 2505
+INFO 2024-02-26 15:59:44,794 views 15612 18584 inventory page
+INFO 2024-02-26 15:59:44,799 basehttp 15612 18584 "GET /inventory/ HTTP/1.1" 200 5388
+INFO 2024-02-26 16:02:05,154 views 15612 1484 inventory page
+INFO 2024-02-26 16:02:05,159 basehttp 15612 1484 "GET /inventory/ HTTP/1.1" 200 5452
+INFO 2024-02-26 16:02:24,108 views 15612 16696 inventory page
+INFO 2024-02-26 16:02:24,118 basehttp 15612 16696 "GET /inventory/ HTTP/1.1" 200 5452
+INFO 2024-02-26 16:02:24,826 views 15612 16696 inventory page
+INFO 2024-02-26 16:02:24,829 basehttp 15612 16696 "GET /inventory/ HTTP/1.1" 200 5452
+INFO 2024-02-26 16:02:29,476 views 15612 16696 inventory page
+INFO 2024-02-26 16:02:29,482 basehttp 15612 16696 "GET /inventory/ HTTP/1.1" 200 5452
+INFO 2024-02-26 16:02:29,885 views 15612 16696 inventory page
+INFO 2024-02-26 16:02:29,896 basehttp 15612 16696 "GET /inventory/ HTTP/1.1" 200 5452
+INFO 2024-02-26 16:02:49,912 views 15612 3456 inventory page
+INFO 2024-02-26 16:02:49,919 basehttp 15612 3456 "GET /inventory/ HTTP/1.1" 200 5559
+INFO 2024-02-26 16:03:28,811 views 15612 22312 inventory page
+INFO 2024-02-26 16:03:28,823 basehttp 15612 22312 "GET /inventory/ HTTP/1.1" 200 5425
+WARNING 2024-02-26 16:03:30,418 log 15612 22312 Not Found: /inventory/index.html
+WARNING 2024-02-26 16:03:30,419 basehttp 15612 22312 "GET /inventory/index.html? HTTP/1.1" 404 3602
+INFO 2024-02-26 16:04:41,030 autoreload 15612 7340 C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py changed, reloading.
+INFO 2024-02-26 16:04:41,975 autoreload 13308 10276 Watching for file changes with StatReloader
+INFO 2024-02-26 16:04:52,204 autoreload 13308 10276 C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\forms.py changed, reloading.
+INFO 2024-02-26 16:04:52,968 autoreload 21680 9484 Watching for file changes with StatReloader
+INFO 2024-02-26 16:04:57,919 autoreload 21680 9484 C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\urls.py changed, reloading.
+INFO 2024-02-26 16:04:58,815 autoreload 4552 13896 Watching for file changes with StatReloader
+INFO 2024-02-26 16:05:10,805 views 4552 15096 inventory page
+INFO 2024-02-26 16:05:10,848 basehttp 4552 15096 "GET /inventory/ HTTP/1.1" 200 5431
+WARNING 2024-02-26 16:05:18,244 log 4552 4832 Not Found: /inventory/add_product.html
+WARNING 2024-02-26 16:05:18,245 basehttp 4552 4832 "GET /inventory/add_product.html? HTTP/1.1" 404 3630
+INFO 2024-02-26 16:06:20,039 autoreload 4552 13896 C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\urls.py changed, reloading.
+INFO 2024-02-26 16:06:20,753 autoreload 13688 18144 Watching for file changes with StatReloader
+WARNING 2024-02-26 16:06:26,741 log 13688 12732 Not Found: /inventory/add_product.html
+WARNING 2024-02-26 16:06:26,743 basehttp 13688 12732 "GET /inventory/add_product.html? HTTP/1.1" 404 3620
+INFO 2024-02-26 16:06:33,366 basehttp 13688 21544 "GET /add_product HTTP/1.1" 301 0
+ERROR 2024-02-26 16:06:33,435 log 13688 12568 Internal Server Error: /add_product/
+Traceback (most recent call last):
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py", line 78, in add_product
+    return render(request, 'shopapp/inventory/add_product.html', {'form': form, 'message': message})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: shopapp/inventory/add_product.html
+ERROR 2024-02-26 16:06:33,444 basehttp 13688 12568 "GET /add_product/ HTTP/1.1" 500 83089
+INFO 2024-02-26 16:07:13,671 autoreload 13688 18144 C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\urls.py changed, reloading.
+INFO 2024-02-26 16:07:14,454 autoreload 19800 11664 Watching for file changes with StatReloader
+INFO 2024-02-26 16:07:24,812 basehttp 19800 22448 "GET /inventory/add_product HTTP/1.1" 301 0
+ERROR 2024-02-26 16:07:24,883 log 19800 10756 Internal Server Error: /inventory/add_product/
+Traceback (most recent call last):
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py", line 78, in add_product
+    return render(request, 'shopapp/inventory/add_product.html', {'form': form, 'message': message})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: shopapp/inventory/add_product.html
+ERROR 2024-02-26 16:07:24,891 basehttp 19800 10756 "GET /inventory/add_product/ HTTP/1.1" 500 83209
+INFO 2024-02-26 16:09:43,623 autoreload 19800 11664 C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\urls.py changed, reloading.
+INFO 2024-02-26 16:09:44,689 autoreload 15480 10208 Watching for file changes with StatReloader
+INFO 2024-02-26 16:09:55,667 views 15480 3044 inventory page
+INFO 2024-02-26 16:09:55,714 basehttp 15480 3044 "GET /inventory/ HTTP/1.1" 200 5383
+WARNING 2024-02-26 16:09:59,893 log 15480 3044 Not Found: /inventory/add_product/
+WARNING 2024-02-26 16:09:59,894 basehttp 15480 3044 "GET /inventory/add_product/ HTTP/1.1" 404 3608
+INFO 2024-02-26 16:10:34,841 autoreload 22108 21852 Watching for file changes with StatReloader
+INFO 2024-02-26 16:10:42,815 views 22108 15636 inventory page
+INFO 2024-02-26 16:10:42,867 basehttp 22108 15636 "GET /inventory/ HTTP/1.1" 200 5383
+WARNING 2024-02-26 16:10:47,686 log 22108 13288 Not Found: /inventory/add_product/
+WARNING 2024-02-26 16:10:47,688 basehttp 22108 13288 "GET /inventory/add_product/ HTTP/1.1" 404 3608
+ERROR 2024-02-26 16:10:54,544 log 22108 13288 Internal Server Error: /add_product/
+Traceback (most recent call last):
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py", line 78, in add_product
+    return render(request, 'shopapp/inventory/add_product.html', {'form': form, 'message': message})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: shopapp/inventory/add_product.html
+ERROR 2024-02-26 16:10:54,553 basehttp 22108 13288 "GET /add_product/ HTTP/1.1" 500 83089
+INFO 2024-02-26 16:19:50,507 autoreload 8188 17220 Watching for file changes with StatReloader
+INFO 2024-02-26 16:20:02,094 views 8188 2988 INDEX page raised
+INFO 2024-02-26 16:20:02,107 basehttp 8188 2988 "GET / HTTP/1.1" 200 356
+INFO 2024-02-26 16:20:07,446 views 8188 2988 inventory page
+INFO 2024-02-26 16:20:07,466 basehttp 8188 2988 "GET /inventory/ HTTP/1.1" 200 5383
+WARNING 2024-02-26 16:20:10,795 log 8188 2988 Not Found: /inventory/add_product/
+WARNING 2024-02-26 16:20:10,796 basehttp 8188 2988 "GET /inventory/add_product/ HTTP/1.1" 404 3608
+ERROR 2024-02-26 16:20:16,613 log 8188 2988 Internal Server Error: /add_product/
+Traceback (most recent call last):
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py", line 78, in add_product
+    return render(request, 'shopapp/inventory/add_product.html', {'form': form, 'message': message})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: shopapp/inventory/add_product.html
+ERROR 2024-02-26 16:20:16,620 basehttp 8188 2988 "GET /add_product/ HTTP/1.1" 500 83605
+INFO 2024-02-26 16:20:54,091 autoreload 8188 17220 C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py changed, reloading.
+INFO 2024-02-26 16:20:54,943 autoreload 20384 21508 Watching for file changes with StatReloader
+INFO 2024-02-26 16:20:59,314 basehttp 20384 22048 "GET /add_product/ HTTP/1.1" 200 1240
