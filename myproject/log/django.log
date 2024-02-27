@@ -3223,3 +3223,54 @@ WARNING 2024-02-27 13:55:13,332 log 13244 21000 Bad Request: /about/upload/123/
 WARNING 2024-02-27 13:55:13,340 basehttp 13244 21000 "POST /about/upload/123/ HTTP/1.1" 400 83604
 INFO 2024-02-27 13:55:19,376 views 13244 21000 inventory page
 INFO 2024-02-27 13:55:19,377 basehttp 13244 21000 "GET /inventory/ HTTP/1.1" 200 2721
+INFO 2024-02-27 20:16:12,369 autoreload 16136 16200 Watching for file changes with StatReloader
+WARNING 2024-02-27 20:16:22,378 log 16136 15752 Not Found: /randomapp/
+WARNING 2024-02-27 20:16:22,378 basehttp 16136 15752 "GET /randomapp/ HTTP/1.1" 404 3994
+INFO 2024-02-27 20:16:24,488 views 16136 15752 INDEX page raised
+INFO 2024-02-27 20:16:24,516 basehttp 16136 15752 "GET / HTTP/1.1" 200 356
+WARNING 2024-02-27 20:16:24,663 log 16136 15752 Not Found: /favicon.ico
+WARNING 2024-02-27 20:16:24,663 basehttp 16136 15752 "GET /favicon.ico HTTP/1.1" 404 3997
+INFO 2024-02-27 20:16:42,985 basehttp 16136 15752 "GET /inventory HTTP/1.1" 301 0
+INFO 2024-02-27 20:16:42,993 views 16136 5552 inventory page
+INFO 2024-02-27 20:16:43,015 basehttp 16136 5552 "GET /inventory/ HTTP/1.1" 200 2721
+INFO 2024-02-27 20:16:47,139 basehttp 16136 5552 "GET /about/upload/124/ HTTP/1.1" 200 763
+ERROR 2024-02-27 20:17:21,750 exception 16136 5552 Could not derive file name from ''
+Traceback (most recent call last):
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\myproject\shopapp\views.py", line 107, in upload_image
+    fs.save(product.image, image)
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\core\files\storage\base.py", line 37, in save
+    name = self.get_available_name(name, max_length=max_length)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\core\files\storage\base.py", line 71, in get_available_name
+    validate_file_name(file_name)
+  File "C:\Users\RND\Documents\RP\19_Django\DjangoShopHW\.venv\Lib\site-packages\django\core\files\utils.py", line 10, in validate_file_name
+    raise SuspiciousFileOperation("Could not derive file name from '%s'" % name)
+django.core.exceptions.SuspiciousFileOperation: Could not derive file name from ''
+WARNING 2024-02-27 20:17:21,860 log 16136 5552 Bad Request: /about/upload/124/
+WARNING 2024-02-27 20:17:21,860 basehttp 16136 5552 "POST /about/upload/124/ HTTP/1.1" 400 83363
+INFO 2024-02-27 20:28:50,171 autoreload 10596 5524 Watching for file changes with StatReloader
+INFO 2024-02-27 20:29:03,054 views 10596 11628 INDEX page raised
+INFO 2024-02-27 20:29:03,059 basehttp 10596 11628 "GET / HTTP/1.1" 200 356
+INFO 2024-02-27 20:29:09,333 views 10596 11628 inventory page
+INFO 2024-02-27 20:29:09,354 basehttp 10596 11628 "GET /inventory/ HTTP/1.1" 200 2721
+INFO 2024-02-27 20:29:12,152 basehttp 10596 11628 "GET /about/upload/118/ HTTP/1.1" 200 763
+INFO 2024-02-27 20:29:19,284 basehttp 10596 11628 "POST /about/upload/118/ HTTP/1.1" 200 763
+INFO 2024-02-27 20:29:42,017 views 10596 11628 inventory page
+INFO 2024-02-27 20:29:42,017 basehttp 10596 11628 "GET /inventory/ HTTP/1.1" 200 2721
+INFO 2024-02-27 20:30:09,310 basehttp 10596 11628 "GET /about/upload/119/ HTTP/1.1" 200 763
+INFO 2024-02-27 20:30:15,198 basehttp 10596 11628 "POST /about/upload/119/ HTTP/1.1" 200 763
+INFO 2024-02-27 20:51:32,227 autoreload 18320 15328 Watching for file changes with StatReloader
+INFO 2024-02-27 20:51:43,153 views 18320 18084 INDEX page raised
+INFO 2024-02-27 20:51:43,163 basehttp 18320 18084 "GET / HTTP/1.1" 200 356
+INFO 2024-02-27 20:51:52,394 views 18320 18084 inventory page
+INFO 2024-02-27 20:51:52,410 basehttp 18320 18084 "GET /inventory/ HTTP/1.1" 200 2721
+INFO 2024-02-27 20:51:56,073 basehttp 18320 18084 "GET /about/upload/120/ HTTP/1.1" 200 763
+INFO 2024-02-27 20:52:03,097 basehttp 18320 18084 "POST /about/upload/120/ HTTP/1.1" 200 763
+INFO 2024-02-27 20:52:23,990 views 18320 18084 inventory page
+INFO 2024-02-27 20:52:23,998 basehttp 18320 18084 "GET /inventory/ HTTP/1.1" 200 2721
