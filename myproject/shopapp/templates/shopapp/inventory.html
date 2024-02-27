@@ -25,6 +25,7 @@
         <td>{{ poduct.price }}</td>
         <td>{{ poduct.quantity }}</td>
         <td><a href="{% url 'edit_product' poduct.id %}">Edit</a></td>
+        <td><a href="{% url 'upload_image' poduct.id %}">Upload Image</a></td>
     </tr>
     {% endfor %}
 </table>

@@ -10,5 +10,6 @@
         {% csrf_token %}
         {{ form }}
         <button type="submit">Add</button>
+        <a href="{% url 'inventory' %}">Back To Inventory</a>
     </form>
 {% endblock%}

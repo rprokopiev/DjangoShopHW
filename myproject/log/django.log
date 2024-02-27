@@ -2969,3 +2969,257 @@ INFO 2024-02-26 21:56:38,002 basehttp 11900 10668 "POST /about/inventory/add_pro
 INFO 2024-02-26 21:56:51,532 basehttp 11900 10668 "POST /about/inventory/add_product/ HTTP/1.1" 200 1497
 INFO 2024-02-26 21:56:56,652 views 11900 10668 inventory page
 INFO 2024-02-26 21:56:56,662 basehttp 11900 10668 "GET /about/inventory/ HTTP/1.1" 200 3915
+INFO 2024-02-27 13:04:26,351 autoreload 6660 6244 Watching for file changes with StatReloader
+INFO 2024-02-27 13:04:31,650 views 6660 21080 inventory page
+INFO 2024-02-27 13:04:31,686 basehttp 6660 21080 "GET /inventory/ HTTP/1.1" 200 3915
+WARNING 2024-02-27 13:04:32,016 log 6660 21080 Not Found: /favicon.ico
+WARNING 2024-02-27 13:04:32,019 basehttp 6660 21080 "GET /favicon.ico HTTP/1.1" 404 3974
+INFO 2024-02-27 13:04:38,343 basehttp 6660 13060 "GET /about/inventory/add_product/ HTTP/1.1" 200 1356
+INFO 2024-02-27 13:05:17,672 basehttp 6660 13060 "POST /about/inventory/add_product/ HTTP/1.1" 200 1488
+INFO 2024-02-27 13:05:53,041 views 6660 13060 inventory page
+INFO 2024-02-27 13:05:53,048 basehttp 6660 13060 "GET /inventory/ HTTP/1.1" 200 3915
+INFO 2024-02-27 13:12:57,931 autoreload 6660 6244 C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\models.py changed, reloading.
+INFO 2024-02-27 13:12:58,653 autoreload 15016 20308 Watching for file changes with StatReloader
+INFO 2024-02-27 13:29:20,460 autoreload 3264 4004 Watching for file changes with StatReloader
+INFO 2024-02-27 13:29:26,284 views 3264 4900 inventory page
+ERROR 2024-02-27 13:29:26,377 log 3264 4900 Internal Server Error: /inventory/
+Traceback (most recent call last):
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py", line 57, in inventory
+    return render(request, 'shopapp/inventory.html', context={'inventory': inventory})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'upload_image' with arguments '(116,)' not found. 3 pattern(s) tried: ['about/upload/\\Z', 'main/upload/\\Z', 'upload/\\Z']
+ERROR 2024-02-27 13:29:26,406 basehttp 3264 4900 "GET /inventory/ HTTP/1.1" 500 183369
+INFO 2024-02-27 13:31:02,159 autoreload 3264 4004 C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\urls.py changed, reloading.
+INFO 2024-02-27 13:31:02,848 autoreload 1888 17792 Watching for file changes with StatReloader
+INFO 2024-02-27 13:33:36,775 autoreload 1888 17792 C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py changed, reloading.
+INFO 2024-02-27 13:33:37,431 autoreload 1360 10236 Watching for file changes with StatReloader
+INFO 2024-02-27 13:33:44,815 views 1360 15060 inventory page
+INFO 2024-02-27 13:33:44,838 basehttp 1360 15060 "GET /inventory/ HTTP/1.1" 200 4671
+INFO 2024-02-27 13:33:49,762 basehttp 1360 2076 "GET /about/upload/116/ HTTP/1.1" 200 763
+ERROR 2024-02-27 13:33:55,696 log 1360 2076 Internal Server Error: /about/upload/116/
+Traceback (most recent call last):
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py", line 107, in upload_image
+    fs.save(product.image, image)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\files\storage\base.py", line 38, in save
+    name = self._save(name, content)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\files\storage\filesystem.py", line 106, in _save
+    fd = os.open(full_path, self.OS_OPEN_FLAGS, 0o666)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'C:\\Users\\rprokopiev\\Documents\\Django\\DjangoShopHW\\myproject\\media\\2024-02-26 18:36:57.058163+00:00'
+ERROR 2024-02-27 13:33:55,713 basehttp 1360 2076 "POST /about/upload/116/ HTTP/1.1" 500 79899
+INFO 2024-02-27 13:35:12,294 views 1360 4164 inventory page
+INFO 2024-02-27 13:35:12,300 basehttp 1360 4164 "GET /inventory/ HTTP/1.1" 200 4671
+INFO 2024-02-27 13:38:54,094 autoreload 8520 3924 Watching for file changes with StatReloader
+INFO 2024-02-27 13:38:57,045 views 8520 1876 inventory page
+INFO 2024-02-27 13:38:57,068 basehttp 8520 1876 "GET /inventory/ HTTP/1.1" 200 2179
+INFO 2024-02-27 13:39:01,666 basehttp 8520 1876 "GET /about/upload/118/ HTTP/1.1" 200 763
+ERROR 2024-02-27 13:39:07,996 exception 8520 13172 Could not derive file name from ''
+Traceback (most recent call last):
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py", line 107, in upload_image
+    fs.save(product.image, image)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\files\storage\base.py", line 37, in save
+    name = self.get_available_name(name, max_length=max_length)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\files\storage\base.py", line 71, in get_available_name
+    validate_file_name(file_name)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\files\utils.py", line 10, in validate_file_name
+    raise SuspiciousFileOperation("Could not derive file name from '%s'" % name)
+django.core.exceptions.SuspiciousFileOperation: Could not derive file name from ''
+WARNING 2024-02-27 13:39:08,046 log 8520 13172 Bad Request: /about/upload/118/
+WARNING 2024-02-27 13:39:08,046 basehttp 8520 13172 "POST /about/upload/118/ HTTP/1.1" 400 83624
+INFO 2024-02-27 13:43:49,689 autoreload 18404 19080 Watching for file changes with StatReloader
+INFO 2024-02-27 13:43:55,930 views 18404 4724 inventory page
+INFO 2024-02-27 13:43:55,956 basehttp 18404 4724 "GET /inventory/ HTTP/1.1" 200 2179
+INFO 2024-02-27 13:44:01,389 basehttp 18404 14216 "GET /about/upload/122/ HTTP/1.1" 200 763
+ERROR 2024-02-27 13:44:22,736 exception 18404 2552 Could not derive file name from ''
+Traceback (most recent call last):
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py", line 107, in upload_image
+    fs.save(product.image, image)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\files\storage\base.py", line 37, in save
+    name = self.get_available_name(name, max_length=max_length)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\files\storage\base.py", line 71, in get_available_name
+    validate_file_name(file_name)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\files\utils.py", line 10, in validate_file_name
+    raise SuspiciousFileOperation("Could not derive file name from '%s'" % name)
+django.core.exceptions.SuspiciousFileOperation: Could not derive file name from ''
+WARNING 2024-02-27 13:44:22,778 log 18404 2552 Bad Request: /about/upload/122/
+WARNING 2024-02-27 13:44:22,781 basehttp 18404 2552 "POST /about/upload/122/ HTTP/1.1" 400 83621
+INFO 2024-02-27 13:45:01,948 views 18404 16296 inventory page
+INFO 2024-02-27 13:45:01,957 basehttp 18404 16296 "GET /inventory/ HTTP/1.1" 200 2179
+INFO 2024-02-27 13:45:05,684 basehttp 18404 16296 "GET /about/inventory/add_product/ HTTP/1.1" 200 1218
+INFO 2024-02-27 13:45:26,914 basehttp 18404 16084 "POST /about/inventory/add_product/ HTTP/1.1" 200 1265
+INFO 2024-02-27 13:45:39,470 basehttp 18404 19988 "POST /about/inventory/add_product/ HTTP/1.1" 200 1265
+INFO 2024-02-27 13:45:46,146 views 18404 19988 inventory page
+INFO 2024-02-27 13:45:46,157 basehttp 18404 19988 "GET /about/inventory/ HTTP/1.1" 200 2721
+INFO 2024-02-27 13:45:56,647 basehttp 18404 19988 "GET /about/inventory/edit_product/124/ HTTP/1.1" 200 1218
+INFO 2024-02-27 13:46:14,962 basehttp 18404 19988 "POST /about/inventory/edit_product/124/ HTTP/1.1" 200 1264
+INFO 2024-02-27 13:46:22,576 views 18404 17788 inventory page
+INFO 2024-02-27 13:46:22,583 basehttp 18404 17788 "GET /about/inventory/ HTTP/1.1" 200 2720
+INFO 2024-02-27 13:47:00,100 autoreload 18404 19080 C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py changed, reloading.
+INFO 2024-02-27 13:47:00,818 autoreload 11012 20276 Watching for file changes with StatReloader
+INFO 2024-02-27 13:47:03,767 views 11012 17524 inventory page
+INFO 2024-02-27 13:47:03,794 basehttp 11012 17524 "GET /about/inventory/ HTTP/1.1" 200 2720
+INFO 2024-02-27 13:47:09,026 basehttp 11012 17524 "GET /about/inventory/edit_product/123/ HTTP/1.1" 200 1231
+INFO 2024-02-27 13:47:26,478 basehttp 11012 17524 "POST /about/inventory/edit_product/123/ HTTP/1.1" 200 1280
+INFO 2024-02-27 13:47:38,204 views 11012 17524 inventory page
+INFO 2024-02-27 13:47:38,204 basehttp 11012 17524 "GET /about/inventory/ HTTP/1.1" 200 2721
+INFO 2024-02-27 13:49:08,314 views 11012 14264 inventory page
+INFO 2024-02-27 13:49:08,319 basehttp 11012 14264 "GET /about/inventory/ HTTP/1.1" 200 2721
+INFO 2024-02-27 13:49:09,699 basehttp 11012 14264 "GET /about/inventory/add_product/ HTTP/1.1" 200 1289
+INFO 2024-02-27 13:49:11,888 views 11012 14264 inventory page
+INFO 2024-02-27 13:49:11,890 basehttp 11012 14264 "GET /about/inventory/ HTTP/1.1" 200 2721
+INFO 2024-02-27 13:49:14,413 basehttp 11012 14264 "GET /about/inventory/edit_product/118/ HTTP/1.1" 200 1289
+INFO 2024-02-27 13:49:15,512 views 11012 14264 inventory page
+INFO 2024-02-27 13:49:15,516 basehttp 11012 14264 "GET /about/inventory/ HTTP/1.1" 200 2721
+INFO 2024-02-27 13:49:31,425 basehttp 11012 14264 "GET /about/upload/124/ HTTP/1.1" 200 763
+ERROR 2024-02-27 13:49:37,727 exception 11012 14264 Could not derive file name from ''
+Traceback (most recent call last):
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py", line 107, in upload_image
+    fs.save(product.image, image)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\files\storage\base.py", line 37, in save
+    name = self.get_available_name(name, max_length=max_length)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\files\storage\base.py", line 71, in get_available_name
+    validate_file_name(file_name)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\files\utils.py", line 10, in validate_file_name
+    raise SuspiciousFileOperation("Could not derive file name from '%s'" % name)
+django.core.exceptions.SuspiciousFileOperation: Could not derive file name from ''
+WARNING 2024-02-27 13:49:37,780 log 11012 14264 Bad Request: /about/upload/124/
+WARNING 2024-02-27 13:49:37,780 basehttp 11012 14264 "POST /about/upload/124/ HTTP/1.1" 400 83604
+INFO 2024-02-27 13:49:57,176 views 11012 14264 inventory page
+INFO 2024-02-27 13:49:57,181 basehttp 11012 14264 "GET /inventory/ HTTP/1.1" 200 2721
+INFO 2024-02-27 13:50:01,551 basehttp 11012 14264 "GET /about/upload/123/ HTTP/1.1" 200 763
+ERROR 2024-02-27 13:51:25,940 exception 11012 14264 Could not derive file name from ''
+Traceback (most recent call last):
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py", line 107, in upload_image
+    fs.save(product.image, image)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\files\storage\base.py", line 37, in save
+    name = self.get_available_name(name, max_length=max_length)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\files\storage\base.py", line 71, in get_available_name
+    validate_file_name(file_name)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\files\utils.py", line 10, in validate_file_name
+    raise SuspiciousFileOperation("Could not derive file name from '%s'" % name)
+django.core.exceptions.SuspiciousFileOperation: Could not derive file name from ''
+WARNING 2024-02-27 13:51:25,977 log 11012 14264 Bad Request: /about/upload/123/
+WARNING 2024-02-27 13:51:25,978 basehttp 11012 14264 "POST /about/upload/123/ HTTP/1.1" 400 83609
+INFO 2024-02-27 13:54:56,602 autoreload 13244 4336 Watching for file changes with StatReloader
+INFO 2024-02-27 13:55:05,037 views 13244 21000 inventory page
+INFO 2024-02-27 13:55:05,064 basehttp 13244 21000 "GET /inventory/ HTTP/1.1" 200 2721
+INFO 2024-02-27 13:55:08,277 basehttp 13244 21000 "GET /about/upload/123/ HTTP/1.1" 200 763
+ERROR 2024-02-27 13:55:13,236 exception 13244 21000 Could not derive file name from ''
+Traceback (most recent call last):
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\myproject\shopapp\views.py", line 107, in upload_image
+    fs.save(product.image, image)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\files\storage\base.py", line 37, in save
+    name = self.get_available_name(name, max_length=max_length)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\files\storage\base.py", line 71, in get_available_name
+    validate_file_name(file_name)
+  File "C:\Users\rprokopiev\Documents\Django\DjangoShopHW\.venv\Lib\site-packages\django\core\files\utils.py", line 10, in validate_file_name
+    raise SuspiciousFileOperation("Could not derive file name from '%s'" % name)
+django.core.exceptions.SuspiciousFileOperation: Could not derive file name from ''
+WARNING 2024-02-27 13:55:13,332 log 13244 21000 Bad Request: /about/upload/123/
+WARNING 2024-02-27 13:55:13,340 basehttp 13244 21000 "POST /about/upload/123/ HTTP/1.1" 400 83604
+INFO 2024-02-27 13:55:19,376 views 13244 21000 inventory page
+INFO 2024-02-27 13:55:19,377 basehttp 13244 21000 "GET /inventory/ HTTP/1.1" 200 2721

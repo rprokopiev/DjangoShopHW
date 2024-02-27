@@ -65,20 +65,18 @@ def add_product(request):
             description = form.cleaned_data['description']
             price = form.cleaned_data['price']
             quantity = form.cleaned_data['quantity']
-            image = form.cleaned_data['image']
             new_product = Product(
                                 prod_name=prod_name,
                                 description=description,
                                 price=price,
                                 quantity=quantity,
-                                image=image,
                             )
             new_product.save()
-            # message = f'Product {new_product.prod_name} added'
+            message = f'Product {new_product.prod_name} added'
     else:
         form = AddProduct()
-        # message = 'Fill the form'
-    return render(request, 'shopapp/add_product.html', {'form': form})
+        message = 'Fill the form'
+    return render(request, 'shopapp/add_product.html', {'form': form, 'message': message})
 
 
 def edit_product(request, product_id):
@@ -91,22 +89,22 @@ def edit_product(request, product_id):
             product.description = form.cleaned_data['description']
             product.price = form.cleaned_data['price']
             product.quantity = form.cleaned_data['quantity']
-            product.image = form.cleaned_data['image']
             product.save()
-            # message = f'Product edited'
+            message = f'Product edited'
     else:
         form = EditProduct()
-        # message = 'Fill the form'
-    return render(request, 'shopapp/edit_product.html', {'form': form})
+        message = 'Fill the form'
+    return render(request, 'shopapp/edit_product.html', {'form': form, 'message': message})
 
 
-def upload_image(request):
+def upload_image(request, product_id):
+    product = get_object_or_404(Product, pk=product_id) 
     if request.method == 'POST':
         form = ImageForm(request.POST, request.FILES)
         if form.is_valid():
-            image = form.celaned_data['image']
+            image = form.cleaned_data['image']
             fs = FileSystemStorage()
-            fs.save(image.name, image)
+            fs.save(product.image, image)
     else:
         form = ImageForm()
     return render(request, 'shopapp/upload_image.html', {'form': form})

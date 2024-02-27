@@ -6,7 +6,6 @@ class AddProduct(forms.Form):
     description = forms.CharField(widget=forms.Textarea(attrs={'class': 'form-control'}))
     price = forms.DecimalField(max_digits=8, decimal_places=2)
     quantity = forms.IntegerField()
-    image = forms.ImageField()
 
 
 class EditProduct(forms.Form):
@@ -14,8 +13,6 @@ class EditProduct(forms.Form):
     description = forms.CharField(widget=forms.Textarea(attrs={'class': 'form-control'}))
     price = forms.DecimalField(max_digits=8, decimal_places=2)
     quantity = forms.IntegerField()
-    image = forms.ImageField()
-
 
 class ImageForm(forms.Form):
     image = forms.ImageField()
