@@ -31,7 +31,7 @@ CSRF_COOKIE_SECURE = True
 
 ALLOWED_HOSTS = [
     'rprokopiev.pythonanywhere.com'
-]
+    ]
 
 
 # Application definition
